@@ -139,7 +139,7 @@ LOCAL_SRC_FILES := celt/bands.c \
 LOCAL_CFLAGS        := -DNULL=0 -DSOCKLEN_T=socklen_t -DLOCALE_NOT_USED \
                        -D_LARGEFILE_SOURCE=1 -D_FILE_OFFSET_BITS=64 \
                        -Drestrict='' -D__EMX__ -DOPUS_BUILD -DFIXED_POINT \
-                       -DUSE_ALLOCA -DHAVE_LRINT -DHAVE_LRINTF -O1 -fno-math-errno
+                       -DUSE_ALLOCA -DHAVE_LRINT -DHAVE_LRINTF -O1 -fno-math-errno -fno-unsafe-math-optimizations -fno-tree-vectorize
 LOCAL_CPPFLAGS      := -DBSD=1 -ffast-math -O1 -funroll-loops
 
 LOCAL_STATIC_LIBRARIES := libogg
